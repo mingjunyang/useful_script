@@ -9,17 +9,17 @@ mkdir -p llvm_$llvm_version
 
 cd llvm_$llvm_version || exit
 
-wget http://releases.llvm.org/$llvm_version/llvm-$llvm_version.src.tar.xz
-wget http://releases.llvm.org/$llvm_version/cfe-$llvm_version.src.tar.xz
-wget http://releases.llvm.org/$llvm_version/compiler-rt-$llvm_version.src.tar.xz
-wget http://releases.llvm.org/$llvm_version/libcxx-$llvm_version.src.tar.xz
-wget http://releases.llvm.org/$llvm_version/libcxxabi-$llvm_version.src.tar.xz
-wget http://releases.llvm.org/$llvm_version/libunwind-$llvm_version.src.tar.xz
-wget http://releases.llvm.org/$llvm_version/lld-$llvm_version.src.tar.xz
-wget http://releases.llvm.org/$llvm_version/lldb-$llvm_version.src.tar.xz
-wget http://releases.llvm.org/$llvm_version/openmp-$llvm_version.src.tar.xz
-wget http://releases.llvm.org/$llvm_version/polly-$llvm_version.src.tar.xz
-wget http://releases.llvm.org/$llvm_version/clang-tools-extra-$llvm_version.src.tar.xz
+wget https://releases.llvm.org/$llvm_version/llvm-$llvm_version.src.tar.xz
+wget https://releases.llvm.org/$llvm_version/cfe-$llvm_version.src.tar.xz
+wget https://releases.llvm.org/$llvm_version/compiler-rt-$llvm_version.src.tar.xz
+wget https://releases.llvm.org/$llvm_version/libcxx-$llvm_version.src.tar.xz
+wget https://releases.llvm.org/$llvm_version/libcxxabi-$llvm_version.src.tar.xz
+wget https://releases.llvm.org/$llvm_version/libunwind-$llvm_version.src.tar.xz
+wget https://releases.llvm.org/$llvm_version/lld-$llvm_version.src.tar.xz
+wget https://releases.llvm.org/$llvm_version/lldb-$llvm_version.src.tar.xz
+wget https://releases.llvm.org/$llvm_version/openmp-$llvm_version.src.tar.xz
+wget https://releases.llvm.org/$llvm_version/polly-$llvm_version.src.tar.xz
+wget https://releases.llvm.org/$llvm_version/clang-tools-extra-$llvm_version.src.tar.xz
 
 tar_list=$(ls *.tar.xz)
 echo "$(pwd)"
