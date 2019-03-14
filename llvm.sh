@@ -50,7 +50,7 @@ mv polly-$llvm_version.src    $LLVMDIR/tools/polly
 mkdir -p build
 cd build
 
-cmake ../$LLVMDIR
+cmake ../$LLVMDIR -DPYTHON_EXECUTABLE:FILEPATH=/usr/local/bin/python3
 cmake --build .
 cmake -DCMAKE_INSTALL_PREFIX=/opt/llvm6 -P cmake_install.cmake
 
